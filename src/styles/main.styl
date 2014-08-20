@@ -1,10 +1,23 @@
 @import 'prism/themes/prism-okaidia.css'
 
 @font-face {
-  font-family:'Patua One';
+  font-family:'Museo';
   font-style:normal;
-  font-weight:400;
-  src:local('Patua One'), local('PatuaOne-Regular'), url("/fonts/patua-one.woff") format('woff');
+  font-weight: 500;
+  src:local('Museo'),
+      local('Museo-Regular'),
+      local('Museo500-Regular'),
+      url("/fonts/Museo500-Regular-webfont.woff") format('woff');
+}
+
+@font-face {
+  font-family:'Museo Sans';
+  font-style:normal;
+  font-weight: 500;
+  src:local('Museo'),
+      local('Museo-Sans'),
+      local('Museo500-Sans'),
+      url("/fonts/MuseoSans_500-webfont.woff") format('woff');
 }
 
 @media print {
@@ -14,7 +27,7 @@
 }
 
 body {
-  font-family: 'Patua One', sans;
+  font-family: 'Museo', sans;
   background-color: #fafafa;
 }
 
