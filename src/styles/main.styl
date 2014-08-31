@@ -68,11 +68,6 @@ h2.fullish-slide {
   font-size: 73pt;
 }
 
-h3 {
-  padding-top: 15px;
-  opacity: 0.6;
-}
-
 ul {
   margin: 10px 0;
   text-align: left;
@@ -150,6 +145,17 @@ pre {
     font-size: 52%;
     float: left;
     display: inline-block;
+  }
+}
+
+.threeWay {
+  @extend .sideBySide;
+  text-align: center;
+
+  > * {
+    text-align: center;
+    display: inline-block;
+    width: 32%;
   }
 }
 
