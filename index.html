@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Cloud Everything</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>Cloud Everything</h1>
+        <h3>For Fun And Profit</h3>
+      </section>
+      <section>
+        <h2>Cloud Services</h2><br>
+        <ul class="threeWay">
+          <li>
+            <h3>Software</h3><abbr>SaaS</abbr>
+          </li>
+          <li>
+            <h3>Platform</h3><abbr>PaaS</abbr>
+          </li>
+          <li>
+            <h3>Infrastructure</h3><abbr>IaaS</abbr>
+          </li>
+        </ul>
+      </section>
+      <section><img src="images/pizza.jpg" style="width:100%"></section>
+      <section>
+        <h2>SaaS</h2>
+        <ul>
+          <li>Code hosting</li>
+          <li>Development environments</li>
+          <li>Continuous integration</li>
+          <li>Quality analysis</li>
+          <li>Testing tools</li>
+          <li>Monitoring/Analytics</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Code Hosting</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Github</h3><img src="images/github.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Bitbucket</h3><img src="images/bitbucket.png" class="screenshot">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>IDEs</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Cloud9</h3><img src="images/cloud9.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Nitrous.IO</h3><img src="images/nitrous.png" class="screenshot">
+          </li>
+          <li>
+            <h3>CodeAnywhere</h3><img src="images/codeanywhere.png" class="screenshot">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Continuous Integration</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Cloudbees</h3><img src="images/cloudbees.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Travis CI</h3><img src="images/travis.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Wercker</h3><img src="images/wercker.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Snap CI</h3><img src="images/snap.png" class="screenshot">
+          </li>
+          <li>
+            <h3>AppVeyor</h3><img src="images/appveyor.png" class="screenshot">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Quality Analysis</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Code Climate</h3><img src="images/codeclimate.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Coveralls</h3><img src="images/coveralls.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Gemnasium</h3><img src="images/gemnasium.png" class="screenshot">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Testing Tools</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>SauceLabs</h3><img src="images/saucelabs.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Browserstack</h3><img src="images/browserstack.png" class="screenshot">
+          </li>
+          <li>
+            <h3>BlazeMeter</h3><img src="images/blazemeter.png" class="screenshot">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Monitoring</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>New Relic</h3><img src="images/newrelic.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Google Analytics</h3><img src="images/googleanalytics.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Clicky</h3><img src="images/clicky.png" class="screenshot">
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>PaaS</h2>
+        <ul>
+          <li>Deployment environment</li>
+          <li>Datastore hosting</li>
+          <li>Runtime components</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Deployment environment</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Heroku</h3>
+            <pre><code class="language-javascript">$ heroku apps:create example
+Creating example... done, stack is cedar
+http://example.herokuapp.com/ | git@heroku.com:example.git
+Git remote heroku added
+
+$ git push heroku master
+Initializing repository, done.
+updating 'refs/heads/master'
+...</code></pre>
+          </li>
+          <li>
+            <h3>Azure</h3>
+            <pre><code class="language-markup">$ azure create site example --git
+info:   Executing command site create
+info:   Using location southcentraluswebspace
+info:   Executing `git init`
+info:   Creating default .gitignore file
+info:   Creating a new web site
+info:   Created web site at  example.azurewebsites.net
+info:   Initializing repository
+info:   Repository initialized
+info:   Executing `git remote add azure
+        https://username@example.azurewebsites.net/example.git`
+info:   site create command OK              
+$ git push azure master
+...</code></pre>
+          </li>
+          <li>
+            <h3>Google App Engine</h3>
+            <pre><code class="language-javascript">/path/to/google_appengine/appcfg.py --oauth2 update goplus</code></pre>
+          </li>
+          <li>
+            <h3>Github Pages</h3>
+            <pre><code class="language-javascript">git push origin gh-pages
+</code></pre>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Database hosting</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Heroku</h3>
+            <pre><code class="language-javascript">$ heroku addons:add heroku-postgresql:dev
+Adding heroku-postgresql:dev to sushi... done, v69 (free)
+Attached as HEROKU_POSTGRESQL_RED
+Database has been created and is available
+
+$ heroku config | grep HEROKU_POSTGRESQL
+HEROKU_POSTGRESQL_RED_URL:
+postgres://user312:passkja@ec2- [...] .amazonaws.com:6212/db9823</code></pre>
+          </li>
+          <li>
+            <h3>Azure</h3><img src="images/azuredata.png" class="screenshot">
+          </li>
+          <li>
+            <h3>Cloudant</h3>
+            <pre><code class="language-javascript">$ curl -X PUT -u myUsername \
+  https://myUsername.cloudant.com/myDatabase
+  
+{ "ok": true }
+
+$ curl -X POST \
+  -H 'Content-Type: application/json' \
+  -d '{"a_string": "String!", "someData": true}' \
+  -u myUsername https://myUsername.cloudant.com/myDatabase
+  
+{ "ok": true }</code></pre>
+          </li>
+          <li>
+            <h3>MongoLab</h3>
+            <pre><code class="language-javascript">% mongo ds012345.mongolab.com:56789/dbname -u dbuser -p dbpassword
+
+> db.someThings.find()
+{ "_id" : 1, "name" : "a" }
+{ "_id" : 2, "type" : "b" }
+{ "_id" : 3, "type" : "c" }</code></pre>
+          </li>
+          <li>
+            <h3>GrapheneDB</h3><img src="images/graphene.png" class="screenshot">
+          </li>
+          <li>
+            <h3>AWS</h3>
+            <ul>
+              <li>
+                <h5>DynamoDB</h5>
+              </li>
+              <li>
+                <h5>Relational Database Service (RDS)</h5>
+              </li>
+              <li>
+                <h5>Redshift</h5>
+              </li>
+              <li>
+                <h5>Kinesis</h5>
+              </li>
+              <li>
+                <h5>ElastiCache</h5>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Runtime Components</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Twilio            </h3>
+            <pre><code class="language-javascript">$ curl -X POST \
+  https://api.twilio.com/2010-04-01/Accounts/AC3094732a/Calls.json \
+  -d "Url=http://demo.twilio.com/docs/voice.xml" \
+  -d "To=+445432123123" -d "From=+441234123123" \
+  -u 'AC3094732a:{AuthToken}'</code></pre>
+            <h4>demo.twilio.com/docs/voice.xml:</h4>
+            <pre><code class="language-markup">&lt;Response&gt;
+&lt;Say voice="alice"&gt;Thanks for trying our documentation. Enjoy!&lt;/Say&gt;
+&lt;Play&gt;http://demo.twilio.com/docs/classic.mp3&lt;/Play&gt;
+&lt;/Response&gt;</code></pre>
+          </li>
+          <li>
+            <h3>Stripe</h3>
+            <pre><code class="language-markup">&lt;form action="" method="POST"&gt;
+  &lt;script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+    data-amount="2000"
+    data-name="Demo Site"
+    data-description="2 widgets ($20.00)"
+    data-image="/128x128.png"&gt;
+  &lt;/script&gt;
+&lt;/form&gt;
+</code></pre><form action="" method="POST">
+             <script
+               src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+               data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+               data-amount="2000"
+               data-name="Demo Site"
+               data-description="2 widgets ($20.00)"
+               data-image="https://stripe.com/img/documentation/checkout/marketplace.png">
+             </script>
+            </form>
+          </li>
+          <li>
+            <h3>Pusher</h3>
+            <pre><code class="language-javascript">var pusher = new Pusher('YOUR_APP_KEY');
+var channel = pusher.subscribe('my-channel');                
+channel.bind('my-event', function(data) {
+  alert('An event was triggered with message: ' + data.message);
+});
+</code></pre>
+            <pre><code class="language-javascript">var Pusher = require('pusher');
+var pusher = new Pusher({ appId: 'APP_ID',
+                          key: 'APP_KEY',
+                          secret: 'APP_SECRET' });
+pusher.trigger('my-channel', 'my-event', {"message": "hello world"});</code></pre>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>IaaS</h2>
+        <ul class="bullet">
+          <li>
+            <h3>Amazon web services</h3>
+          </li>
+          <li>
+            <h5>Elastic Compute 2 (EC2)</h5>
+          </li>
+          <li>
+            <h5>Elastic Block Store (EBS)</h5>
+          </li>
+          <li>
+            <h5>Simple Storage Service (S3)</h5>
+          </li>
+          <li>
+            <h5>Route 53</h5>
+          </li>
+          <li>
+            <h5>CloudFront</h5>
+          </li>
+          <li>
+            <h5>Elastic MapReduce</h5>
+          </li>
+          <li>
+            <h5>CloudFormation</h5>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>IaaS</h2>
+        <ul class="bullet in-place-transition">
+          <li>
+            <h3>Azure</h3>
+          </li>
+          <li>
+            <h3>Google Compute Engine</h3>
+          </li>
+          <li>
+            <h3>DigitalOcean</h3>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Useful Stacks</h2>
+      </section>
+      <section>
+        <h2>For open-source code</h2>
+        <ul>
+          <li>Github</li>
+          <li>Travis</li>
+          <li>Coveralls/Gemnasium</li>
+          <li>Saucelabs</li>
+          <li>Github pages (for docs)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>For open-source web apps</h2>
+        <ul>
+          <li class="lowlight">Github</li>
+          <li>Wercker</li>
+          <li class="lowlight">Coveralls/Gemnasium</li>
+          <li>Heroku</li>
+          <li>New Relic</li>
+          <li>Google Analytics</li>
+          <li class="lowlight">Saucelabs</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Commercial Web Apps</h2>
+        <ul>
+          <li class="lowlight">Github</li>
+          <li>Snap CI</li>
+          <li class="lowlight">Coveralls/Gemnasium/Codeclimate </li>
+          <li class="lowlight">Heroku</li>
+          <li class="lowlight">New Relic</li>
+          <li>Clicky</li>
+          <li>BlazeMeter</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Anything .net</h2>
+        <ul>
+          <li><span class="lowlight">Github </span>(public or private)</li>
+          <li>AppVeyor</li>
+          <li>Azure</li>
+          <li>Azure</li>
+          <li>Azure</li>
+          <li>Azure </li>
+          <li>Azure</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Anything out of the ordinary</h2>
+        <ul>
+          <li>AWS</li>
+          <li>AWS</li>
+          <li>AWS</li>
+          <li>AWS</li>
+          <li>AWS</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Questions?</h1>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
