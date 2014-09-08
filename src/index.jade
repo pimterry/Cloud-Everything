@@ -28,6 +28,9 @@ html
           li
             h3 Infrastructure
             abbr IaaS
+            
+      section
+        img(src='images/pizza.jpg',style='width:100%')            
 
       section
         h2 SaaS
@@ -137,37 +140,143 @@ html
         ul.bullet.in-place-transition
           li
             h3 Heroku
+            pre
+              code.language-javascript.
+                git push heroku master
           li
             h3 Azure
+            pre
+              code.language-javascript.
+                git push azure master
           li
             h3 Google App Engine
+            pre
+              code.language-javascript.
+                /path/to/google_appengine/appcfg.py --oauth2 update goplus
           li
             h3 Github Pages
+            pre
+              code.language-javascript.
+                git push origin gh-pages
+            
       section
         h2 Database hosting
         ul.bullet.in-place-transition
           li
-            h3 Heroku/App Engine/Similar
+            h3 Heroku (and friends)
+            pre
+              code.language-javascript.
+                $ heroku addons:add heroku-postgresql:dev
+                Adding heroku-postgresql:dev to sushi... done, v69 (free)
+                Attached as HEROKU_POSTGRESQL_RED
+                Database has been created and is available
+                
+                $ heroku config | grep HEROKU_POSTGRESQL
+                HEROKU_POSTGRESQL_RED_URL:
+                postgres://user312:passkja@ec2- [...] .amazonaws.com:6212/db9823
           li
             h3 Azure
+            img(src='images/azuredata.png').screenshot
           li
             h3 Cloudant
+            pre
+              code.language-javascript.
+                $ curl -X PUT -u myUsername \
+                  https://myUsername.cloudant.com/myDatabase
+                
+                { "ok": true }
+                
+                $ curl -X POST \
+                  -H 'Content-Type: application/json' \
+                  -d '{"a_string": "String!", "someData": true}' \
+                  -u myUsername https://myUsername.cloudant.com/myDatabase
+                  
+                { "ok": true }
           li
             h3 MongoLab
+            pre
+              code.language-javascript.
+                % mongo ds012345.mongolab.com:56789/dbname -u dbuser -p dbpassword
+                
+                > db.someThings.find()
+                { "_id" : 1, "name" : "a" }
+                { "_id" : 2, "type" : "b" }
+                { "_id" : 3, "type" : "c" }
           li
             h3 GrapheneDB
+            img(src='images/graphene.png').screenshot
           li
-            h3 TempoDB
+            h3 AWS
+            ul
+              li
+                h5 DynamoDB
+              li
+                h5 Relational Database Service (RDS)
+              li
+                h5 Redshift
       section
         h2 Runtime Components
         ul.bullet.in-place-transition
           li
-            h3 Twilio
+            h3 Twilio            
+            pre
+              code.language-javascript.
+                $ curl -X POST \
+                  https://api.twilio.com/2010-04-01/Accounts/AC3094732a/Calls.json \
+                  -d "Url=http://demo.twilio.com/docs/voice.xml" \
+                  -d "To=+445432123123" -d "From=+441234123123" \
+                  -u 'AC3094732a:{AuthToken}'
+            h4 demo.twilio.com/docs/voice.xml:
+            pre
+              code.language-markup.
+                &lt;Response&gt;
+                &lt;Say voice="alice"&gt;Thanks for trying our documentation. Enjoy!&lt;/Say&gt;
+                &lt;Play&gt;http://demo.twilio.com/docs/classic.mp3&lt;/Play&gt;
+                &lt;/Response&gt;
           li
             h3 Stripe
+            pre
+              code.language-markup.
+                &lt;form action="" method="POST"&gt;
+                  &lt;script
+                    src="https://checkout.stripe.com/checkout.js"
+                    class="stripe-button"
+                    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                    data-amount="2000"
+                    data-name="Demo Site"
+                    data-description="2 widgets ($20.00)"
+                    data-image="/128x128.png"&gt;
+                  &lt;/script&gt;
+                &lt;/form&gt;
+                
+            <form action="" method="POST">
+            |  <script
+            |    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            |    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+            |    data-amount="2000"
+            |    data-name="Demo Site"
+            |    data-description="2 widgets ($20.00)"
+            |    data-image="https://stripe.com/img/documentation/checkout/marketplace.png">
+            |  </script>
+            </form>
+            
           li
             h3 Pusher
-
+            pre
+              code.language-javascript.
+                var pusher = new Pusher('YOUR_APP_KEY');
+                var channel = pusher.subscribe('my-channel');                
+                channel.bind('my-event', function(data) {
+                  alert('An event was triggered with message: ' + data.message);
+                });
+                
+            pre
+              code.language-javascript.
+                var Pusher = require('pusher');
+                var pusher = new Pusher({ appId: 'APP_ID',
+                                          key: 'APP_KEY',
+                                          secret: 'APP_SECRET' });
+                pusher.trigger('my-channel', 'my-event', {"message": "hello world"});
       section
         h2 IaaS
         ul.bullet
@@ -175,6 +284,8 @@ html
             h3 Amazon web services
           li
             h5 Elastic Compute 2 (EC2)
+          li
+            h5 Elastic Block Store (EBS)
           li
             h5 Simple Storage Service (S3)
           li
@@ -185,6 +296,11 @@ html
             h5 Elastic MapReduce
           li
             h5 CloudFormation
+            
+      section
+        h2 IaaS
+        ul.bullet
+          li             
 
       section
         h2 IaaS
