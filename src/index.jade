@@ -142,12 +142,33 @@ html
             h3 Heroku
             pre
               code.language-javascript.
-                git push heroku master
+                $ heroku apps:create example
+                Creating example... done, stack is cedar
+                http://example.herokuapp.com/ | git@heroku.com:example.git
+                Git remote heroku added
+              
+                $ git push heroku master
+                Initializing repository, done.
+                updating 'refs/heads/master'
+                ...
           li
             h3 Azure
             pre
-              code.language-javascript.
-                git push azure master
+              code.language-markup.
+                $ azure create site example --git
+                info:   Executing command site create
+                info:   Using location southcentraluswebspace
+                info:   Executing `git init`
+                info:   Creating default .gitignore file
+                info:   Creating a new web site
+                info:   Created web site at  example.azurewebsites.net
+                info:   Initializing repository
+                info:   Repository initialized
+                info:   Executing `git remote add azure
+                        https://username@example.azurewebsites.net/example.git`
+                info:   site create command OK              
+                $ git push azure master
+                ...
           li
             h3 Google App Engine
             pre
@@ -163,7 +184,7 @@ html
         h2 Database hosting
         ul.bullet.in-place-transition
           li
-            h3 Heroku (and friends)
+            h3 Heroku
             pre
               code.language-javascript.
                 $ heroku addons:add heroku-postgresql:dev
@@ -214,6 +235,10 @@ html
                 h5 Relational Database Service (RDS)
               li
                 h5 Redshift
+              li
+                h5 Kinesis
+              li
+                h5 ElastiCache
       section
         h2 Runtime Components
         ul.bullet.in-place-transition
@@ -296,11 +321,6 @@ html
             h5 Elastic MapReduce
           li
             h5 CloudFormation
-            
-      section
-        h2 IaaS
-        ul.bullet
-          li             
 
       section
         h2 IaaS
@@ -309,8 +329,6 @@ html
             h3 Azure
           li
             h3 Google Compute Engine
-          li
-            h3 Rackspace
           li
             h3 DigitalOcean
 
